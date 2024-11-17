@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RedBus</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body>
+    <div>
+        <nav
+            class=" bg-white z-[1000] h-[104px] px-[20px] py-[10px] flex items-center justify-evenly sticky top-0	left-0 max-md:justify-between max-md:gap-[30px]">
+            <!-- -----left nav bar----- -->
+            <div class="flex items-center">
+                <div class="w-[120px]">
+                    <img src="assets/redlogo.png" alt="RedBus logo">
+                </div>
+                <div class="ml-[50px] flex gap-[20px] font-sans	">
+                    <div
+                        class="bg-[#D84E55] p-[15px] rounded-lg flex flex-col items-center max-md:flex-row max-md:p-[5px] max-md:h-[50px] max-md:gap-[10px]">
+                        <img width="24px" height="24px" src="assets/whitelogo.png" alt="">
+                        <p class="text-white">Bus Tickets</p>
+                    </div>
+                    <div
+                        class=" p-[15px] rounded-lg flex flex-col items-center max-md:flex-row max-md:p-[5px] max-md:h-[50px] max-md:gap-[10px]">
+                        <img width="24px" height="24px" src="assets/raillogo.png" alt="">
+                        <p>Train Tickets</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- ----right navbar ------ -->
+            <div class="flex gap-[20px] font-sans  max-md:hidden">
+                <div class="flex gap-[10px] rounded-lg p-[15px] cursor-pointer transition ">
+                    <img width="20px" height="20px" src="assets/headset.png" alt="Head set image">
+                    <p>Help</p>
+                </div>
+                <div class="flex gap-[10px] rounded-lg p-[15px] cursor-pointer">
+                    <img width="20px" height="20px" src="assets/language.png" alt="Head set image">
+                    <p>English</p>
+                </div>
+                <div class="flex gap-[10px] rounded-lg p-[15px] cursor-pointer">
+                    <img width="20px" height="20px" src="assets/account.png" alt="Head set image">
+                    <p>Account</p>
+                </div>
+            </div>
+            <div class="md:hidden">
+                #
+            </div>
+        </nav>
+
+
+        <!-- ------ main content area------ -->
+        <section
+            class="bg-[url(assets/homeBanner.png)] h-[70vh] w-[100%] bg-no-repeat bg-center bg-cover flex flex-col items-center justify-center max-md:mt-[120px]">
+            <h1
+                class="text-4xl font-bold text-gray-800 mb-[20px] px-[15px] text-white max-md:text-[18px] max-md:m-[10px]">
+                India's No. 1 Online Bus Ticket
+                Booking Site</h1>
+
+            <!-- ---search section---- -->
+            <section class="mb-[100px]">
+                <div class="flex bg-white rounded-3xl max-md:flex-col">
+                    <!-- ---from input feild--- -->
+                    <div class="flex gap-[10px]  px-[15px] py-[20px] items-center text-2xl 	">
+                        <img height="30px" width="30px" src="assets/busicon.png" alt="Bus Icon" />
+                        <input class="border-0 focus:outline-none w-full" type="text" placeholder="From" />
+                    </div>
+                    <!-- To input field -->
+                    <div class="flex gap-[10px]  px-[15px] py-[20px] items-center text-2xl ">
+                        <img height="30px" width="30px" src="assets/busicon.png" alt="Bus Icon" />
+                        <input class="focus:outline-none" type="text" placeholder="To" />
+                    </div>
+                    <!-- Date input field -->
+                    <div class="flex gap-[10px]  px-[15px] py-[20px] items-center text-2xl">
+                        <img height="30px" width="30px" src="assets/calendericon.png" alt="Calendar Icon" />
+                        <input type="date" />
+                    </div>
+                    <button
+                        class="bg-[#d84e56] px-[20px] py-[30px] text-white text-[18px] rounded-r-3xl max-md:py-[20px]">SEARCH
+                        BUSES</button>
+                </div>
+            </section>
+        </section>
+        <!-- -----trainding offer section------ -->
+        <section>
+
+            <div class="bg-[#fff] w-[70%] p-[20px] relative mt-[-50px] mx-auto mb-[0px] rounded-2xl max-md:mt-[30px]">
+                <div class="flex justify-between mb-[20px] max-md:flex-col">
+                    <h1 class="text-4xl font-bold text-gray-800">TRENDING OFFERS</h1>
+                    <button class="text-[#1a73e8] font-bold	text-[20px] border-[2px] px-[15px] rounded-2xl ">Veiw
+                        All</button>
+                </div>
+                <!-- cards section  -->
+                <div class="flex gap-[20px] max-md:flex-col">
+                    <div
+                        class="flex bg-gradient-to-r from-cyan-500 to-blue-500 items-center p-[10px] gap-[15px] rounded-[10px]">
+                        <img class="h-[72px] w-[72px] rounded-[50%]" src="assets/card1.png" alt="Offer 1" />
+                        <div class="">
+                            <button
+                                class="rounded-2xl border-[1px] border-black px-[10px] text-white my-[15px]">BUS</button>
+                            <p class="text-white">Save up to Rs 500 on bus tickets</p>
+                            <p class="text-sm text-white">Valid till 29 Sep</p>
+                            <button
+                                class="border-dashed px-[5px] border-[1px] border-white text-white my-[15px]">DUSSEHRA</button>
+                        </div>
+                    </div>
+                    <div
+                        class="flex bg-gradient-to-r from-[#007f72] to-[#2cc1a2] items-center p-[10px] gap-[15px] rounded-[10px]">
+                        <img class="h-[72px] w-[72px] rounded-[50%]" src="assets/card2.png" alt="Offer 1" />
+                        <div>
+                            <button
+                                class="rounded-2xl border-[1px] border-black px-[10px] text-white my-[15px]">BUS</button>
+                            <p class="text-white">Save up to Rs 500 on bus tickets</p>
+                            <p class="text-sm text-white">Valid till 29 Sep</p>
+                            <button
+                                class="border-dashed px-[5px] border-[1px] border-white text-white my-[15px]">DUSSEHRA</button>
+                        </div>
+                    </div>
+                    <div
+                        class="flex bg-gradient-to-r from-purple-500 to-pink-500 items-center p-[10px] gap-[15px] rounded-[10px]">
+                        <img class="h-[72px] w-[72px] rounded-[50%]" src="assets/card3.png" alt="Offer 1" />
+                        <div>
+                            <button
+                                class="rounded-2xl border-[1px] border-black px-[10px] text-white my-[15px]">BUS</button>
+                            <p class="text-white">Save up to Rs 500 on bus tickets</p>
+                            <p class="text-sm text-white">Valid till 29 Sep</p>
+                            <button
+                                class="border-dashed px-[5px] border-[1px] border-white text-white my-[15px]">DUSSEHRA</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- -------train image section --------- -->
+        <section class="mx-auto my-[40px] w-[60%]">
+            <div class="flex justify-between items-center p-[40px] max-md:flex-col">
+                <div class="flex flex-col max-w-[40%] gap-[15px]">
+                    <div>
+                        <h1 class="text-4xl font-bold text-gray-800">NOW, GET MORE THAN JUST BUS TICKETS WITH REDBUS!
+                        </h1>
+                    </div>
+                    <div class="rounded-lg flex items-center gap-[20px] ">
+                        <img width="24px" height="24px" src="assets/raillogo.png" alt="">
+                        <button class="text-[#D32F2F] text-[24px] font-bold">Train Tickets</button>
+                    </div>
+                    <div>
+                        <p>Book IRCTC Train Tickets on redRail simple & superfast booking process with no service fee +
+                            no payment gateway charge.</p>
+                    </div>
+                    <div class=" flex flex-col gap-[20px] mb-[20px]">
+                        <div class="flex items-center">
+                            <img class="mr-[10px]" src="assets/icon1.png" alt="">
+                            <p class="text-[18px]">Authorised IRCTC Partner</p>
+                        </div>
+                        <div class="flex items-center">
+                            <img class="mr-[10px]" src="assets/icon2.png" alt="">
+                            <p class="text-[18px]">Instant refunds on UPI payments</p>
+                        </div>
+                        <div class="flex items-center">
+                            <img class="mr-[10px]" src="assets/icon3.png" alt="">
+                            <p class="text-[18px]">Hassle-free customer support</p>
+                        </div>
+                    </div>
+                    <div>
+                        <button class="bg-[#D32F2F] px-[20px] py-[10px] rounded-lg text-[20px] text-white">Book Trian
+                            Tickets></button>
+                    </div>
+                </div>
+                <div class="max-w-[50%]">
+                    <img height="353px" width="368px" src="assets/Train.png" alt="">
+                </div>
+            </div>
+        </section>
+
+        <!-- ---------banner section-------- -->
+        <section>
+            <div class="flex justify-center items-center">
+                <img width="1200px" src="assets/banner.png" alt="">
+            </div>
+        </section>
+
+        <!-- ---flag section---------- -->
+
+        <section class="">
+            <div class="mb-[50px] w-[70%] mx-auto">
+                <h1 class="text-6xl text-gray-800">Global Presence </h1>
+            </div>
+            <div class="flex justify-evenly w-[90%] mx-auto max-md:w-[40%]">
+                <div class="flex flex-col items-center">
+                    <img src="assets/flag1.png" alt="">
+                    <p>Colombia</p>
+                </div>
+                <div class="flex flex-col items-center">
+                    <img src="assets/flag8.png" alt="">
+                    <p>India</p>
+                </div>
+                <div class="flex flex-col items-center">
+                    <img src="assets/flag3.png" alt="">
+                    <p>Indonesia</p>
+                </div>
+                <div class="flex flex-col items-center">
+                    <img src="assets/flag5.png" alt="">
+                    <p>Malaysia</p>
+                </div>
+                <div class="flex flex-col items-center">
+                    <img src="assets/flag6.png" alt="">
+                    <p>Peru</p>
+                </div>
+                <div class="flex flex-col items-center">
+                    <img src="assets/flag7.png" alt="">
+                    <p>Singapore</p>
+                </div>
+                <div class="flex flex-col items-center">
+                    <img src="assets/flag2.png" alt="">
+                    <p>Vietnam</p>
+                </div>
+                <div class="flex flex-col items-center">
+                    <img src="assets/flag9.png" alt="">
+                    <p>Cambodia</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- -----pera section---------------- -->
+        <section class=" w-[70%] mx-auto my-[50px] py-[50px] px-[20px]">
+            <div class="mb-[20px]">
+                <h1 class="text-4xl font-bold text-gray-800">BOOK BUS TICKETS ONLINE</h1>
+            </div>
+            <div class="">
+                <p class="text-[18px] mb-[10px] leading-8">redBus is India's largest brand for online bus ticket booking
+                    and offers an easy-to-use online bus
+                    and train
+                    ticket booking; with over 36 million satisfied customers, 3500+ bus operators to choose from, and
+                    plenty of
+                    offers on bus ticket booking, redBus makes road journeys super convenient for travellers. A leading
+                    platform for
+                    booking bus tickets, redBus has been the leader in online bus booking over the past 17 years across
+                    thousands of
+                    cities and lakhs of routes in India.</p>
+                <p class="text-[18px] leading-8">Booking a bus ticket online on the redBus app or website is very
+                    simple. You can download the redBus
+                    app or
+                    visit redbus.in and enter your source, destination & travel date to check the top-rated bus services
+                    available.
+                    You can then compare bus prices, user ratings & amenities, select your preferred seat, boarding &
+                    dropping
+                    points and pay using multiple payment options like UPI, debit or credit card, net banking and more.
+                    With redBus,
+                    get assured safe & secure payment methods and guaranteed travel with the best services available.
+                </p>
+            </div>
+        </section>
+
+        <!-- ----2nd last section------------- -->
+        <section class="w-[70%] m-auto mb-[40px]">
+            <div class="flex border-2 p-[40px] rounded-2xl items-center">
+                <div class="mr-[20px]">
+                    <img height="40px" width="60px" src="assets/redlogo.png" alt="">
+                </div>
+                <div class="w-[75%]">
+                    <p class="text-[20px]"><b>Unlock Unbeatable Exclusive redDeals!</b> <span
+                            class="text-[#D32F2F] font-bold">20% OFF</span> </p>
+                    <p><span class="text-[#D32F2F] font-bold mr-[10px]">4176</span> Deals <span
+                            class="text-[#D32F2F] font-bold mr-[10px]">1816</span> Bus Operators <span
+                            class="text-[#D32F2F] font-bold mr-[10px]">231930</span> Routes</p>
+                </div>
+                <div class="">
+                    <button class="bg-[#D32F2F] py-[3px] px-[20px] rounded-lg text-[20px] text-white">Book now</button>
+                </div>
+            </div>
+        </section>
+
+        <section class="bg-[#F2F2F2]">
+            <div class="flex w-[80%] mx-auto p-[50px] justify-evenly">
+                <div class="w-[30%]">
+                    <div class="mb-[20px]">
+                        <img width="120px" height="80px" src="assets/redlogo.png" alt="">
+                    </div>
+                    <div>
+                        <p class="leading-6">redBus is the world's largest online bus ticket booking service trusted by over 25 million happy
+                        customers globally. redBus offers bus ticket booking through its website, iOS, and Android
+                        mobile apps for all major routes.</p>
+                    </div>
+                </div>
+                <div class="flex flex-col">
+                    <p class="mb-[10px] font-bold">About redBus</p>
+                    <a href="">About us</a>
+                    <a href="">Investor Relations</a>
+                    <a href="">Contact us</a>
+                    <a href="">Mobile version</a>
+                    <a href="">redBus on mobile</a>
+                    <a href="">Sitemap</a>
+                    <a href="">Offers</a>
+                    <a href="">Careers</a>
+                    <a href="">Values</a>
+                </div>
+                <div class="flex flex-col">
+                    <p class="mb-[10px] font-bold">info</p>
+                    <a href="">T&C</a>
+                    <a href="">Privacy Policy</a>
+                    <a href="">Contact us</a>
+                    <a href="">Mobile version</a>
+                    <a href="">redBus on mobile</a>
+                    <a href="">Sitemap</a>
+                    <a href="">Offers</a>
+                    <a href="">Careers</a>
+                    <a href="">Values</a>
+                </div>
+                <div class="flex flex-col">
+                    <p class="mb-[10px] font-bold">About redBus</p>
+                    <a href="">About us</a>
+                    <a href="">Investor Relations</a>
+                    <a href="">Contact us</a>
+                    <a href="">Mobile version</a>
+                    <a href="">redBus on mobile</a>
+                    <a href="">Sitemap</a>
+                    <a href="">Offers</a>
+                    <a href="">Careers</a>
+                    <a href="">Values</a>
+                </div>
+                <div class="flex flex-col">
+                    <p class="mb-[10px] font-bold">About redBus</p>
+                    <a href="">About us</a>
+                    <a href="">Investor Relations</a>
+                    <a href="">Contact us</a>
+                    <a href="">Mobile version</a>
+                    <a href="">redBus on mobile</a>
+                    <a href="">Sitemap</a>
+                    <a href="">Offers</a>
+                    <a href="">Careers</a>
+                    <a href="">Values</a>
+                </div>
+            </div>
+        </section>
+    </div>
+</body>
+
+</html>
